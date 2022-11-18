@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'font-awesome/css/font-awesome.min.css';
+
+import Loginpage from './Initialpage/Loginpage';
+import Forgotpassword from './Initialpage/Forgotpassword';
+import Managedjobs from './Jobs/managejobs';
+import ManagedResumes from './Jobs/manageresumes';
+import JobsDashboard from './Jobs/jobs_dashboard';
+import CandidateList from './Jobs/candidatelist';
+import ShortlistCandidate from './Jobs/shortlistcandidates';
+
+
+
+
+
+const App = () => {
+
+  return ( 
+    <div className = "App">
+      {/* <Loginpage/> */}
+      {/* <Forgotpassword/> */}
+      {/* <Managedjobs/> */}
+      {/* <ManagedResumes/> */}
+      <JobsDashboard/>
+      {/* <CandidateList/> */}
+      {/* <ShortlistCandidate/> */}
+
+        
+
+      
+      
+      
+      
+
     </div>
-  );
+   
+  )
+
 }
 
 export default App;
