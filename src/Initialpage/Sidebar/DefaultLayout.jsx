@@ -2,7 +2,7 @@
  * App Routes
  */
  import React, {useEffect,useState } from 'react';
-import { Link, Route, withRouter } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 // router service
 import routerService from "../../router_service";
@@ -133,4 +133,4 @@ const DefaultLayout = (props) => {
 		);
 	
 }
-export default withRouter(DefaultLayout);
+export default DefaultLayout;

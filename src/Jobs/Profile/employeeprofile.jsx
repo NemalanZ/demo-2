@@ -7,14 +7,17 @@ import { Link } from 'react-router-dom';
 import {Avatar_02,Avatar_05,Avatar_09,Avatar_10,Avatar_16 } from '../../../Entryfile/imagepath'
 
 const EmployeeProfile = () => {
-  useEffect( ()=>{
-    if($('.select').length > 0) {
-      $('.select').select2({
-        minimumResultsForSearch: -1,
-        width: '100%'
-      });
-    }
-  });  
+
+
+// {
+//   useEffect( ()=>{
+//     if($('.select').length > 0) {
+//       $('.select').select2({
+//         minimumResultsForSearch: -1,
+//         width: '100%'
+//       });
+//     }
+//   });  
     return (
         <div className="page-wrapper">
             <Helmet>

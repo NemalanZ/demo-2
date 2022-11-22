@@ -31,10 +31,10 @@ export default [
       path: 'main',
       component: Dashboard
    },
-   {
-      path: 'apps',
-      component: Apps
-   },
+  //  {
+  //     path: 'apps',
+  //     component: Apps
+  //  },
    {
       path: 'employee',
       component: Employee
@@ -47,22 +47,22 @@ export default [
       path: 'projects',
       component: Projects
    },
-   {
-      path: 'ui-interface',
-      component: UIinterface
-   },
+  //  {
+  //     path: 'ui-interface',
+  //     component: UIinterface
+  //  },
    {
       path: 'profile',
       component: ProfilePage
    },
-   {
-      path: 'subscription',
-      component: Subscription
-   },
-   {
-      path: 'pages',
-      component: Pages
-   },
+  //  {
+  //     path: 'subscription',
+  //     component: Subscription
+  //  },
+  //  {
+  //     path: 'pages',
+  //     component: Pages
+  //  },
    {
       path: 'administrator',
       component: Administrator
