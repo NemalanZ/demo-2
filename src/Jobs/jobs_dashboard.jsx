@@ -4,8 +4,8 @@
 
  import React from 'react';
  import { Helmet } from "react-helmet"; 
-//  import { Link } from 'react-router-dom';
-// import { Avatar_02,Avatar_09,Avatar_10  } from '../Entryfile/imagepath';
+ import { Link } from 'react-router-dom';
+import { Avatar_01,Avatar_02,Avatar_03  } from '../Entryfile/imagepath';
 // import { Line } from "react-chartjs-2";
 //  import {
 //   Chart as ChartJS,
@@ -16,7 +16,7 @@
 //   Title,
 //   Tooltip,
 //   Legend,
-//   } from 'chart.js';
+//   } from '../Asset/js/chart';
 
   // ChartJS.register(
   //   CategoryScale,
@@ -84,7 +84,9 @@
                  <div className="col-sm-12">
                    <h3 className="page-title">Job Dashboard</h3>
                    <ul className="breadcrumb">
-                     <li className="breadcrumb-item">{/*<Link to="/app/main/dashboard">Dashboard</Link>*/}</li>
+                     <li className="breadcrumb-item">
+                      {/* <Link to="/app/main/dashboard">Dashboard</Link> */}
+                      </li>
                      <li className="breadcrumb-item">Jobs</li>
                      <li className="breadcrumb-item active">Job Dashboard</li>
                    </ul>
@@ -145,7 +147,7 @@
                      <div className="card flex-fill">
                        <div className="card-body">
                          <h3 className="card-title">Overview</h3>                       
-                         {/*<Line data={data} /> */}
+                         {/* <Line data={data} /> */}
                        </div>
                      </div>
                    </div>
@@ -194,11 +196,13 @@
                              <td>1</td>
                              <td>
                                <h2 className="table-avatar">
-                                 {/* <Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_02} /></Link>
-                                 <Link to="/app/profile/employee-profile/profile">John Doe <span>Web Designer</span></Link> */}
+                                 <Link to="/jobs/profile" className="avatar"><img src={Avatar_01} /></Link>
+                                 {/* <Link to="/app/profile/employee-profile/profile">John Doe <span>Web Designer</span></Link> */}
                                </h2>
                              </td>
-                             <td>{/* <Link to="/app/administrator/job-details">Web Developer</Link> */}</td>
+                             <td>
+                              {/* <Link to="/app/administrator/job-details">Web Developer</Link> */}
+                              </td>
                              <td>Development</td>
                              <td>3 Mar 2019</td>
                              <td>31 May 2019</td>
@@ -243,11 +247,13 @@
                              <td>2</td>
                              <td>
                                <h2 className="table-avatar">
-                                 {/*<Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_09} /></Link>
-                                 <Link to="/app/profile/employee-profile/profile">Richard Miles <span>Web Developer</span></Link>*/}
+                                 {/* <Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_02} /></Link> */}
+                                 {/* <Link to="/app/profile/employee-profile/profile">Richard Miles <span>Web Developer</span></Link> */}
                                </h2>
                              </td>
-                             <td>{/*<Link to="/app/administrator/job-details">Web Designer</Link>*/}</td>
+                             <td>
+                              {/* <Link to="/app/administrator/job-details">Web Designer</Link> */}
+                              </td>
                              <td>Designing</td>
                              <td>3 Mar 2019</td>
                              <td>31 May 2019</td>
@@ -292,11 +298,13 @@
                              <td>3</td>
                              <td>
                                <h2 className="table-avatar">
-                                 {/*<Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_10} /></Link>
-                                 <Link to="/app/profile/employee-profile/profile">John Smith <span>Android Developer</span></Link>*/}
+                                 {/* <Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_03} /></Link> */}
+                                 {/* <Link to="/app/profile/employee-profile/profile">John Smith <span>Android Developer</span></Link> */}
                                </h2>
                              </td>
-                             <td>{/*<Link to="/app/administrator/job-details">Android Developer</Link>*/}</td>
+                             <td>
+                              {/* <Link to="/app/administrator/job-details">Android Developer</Link> */}
+                              </td>
                              <td>Android</td>
                              <td>3 Mar 2019</td>
                              <td>31 May 2019</td>
@@ -369,8 +377,8 @@
                              </td>
                              <td>
                                <h2 className="table-avatar">
-                                 {/*<Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_02} /></Link>
-                                 <Link to="/app/profile/employee-profile/profile">John Doe <span>Web Designer</span></Link>*/}
+                                 {/* <Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_01} /></Link> */}
+                                 {/* <Link to="/app/profile/employee-profile/profile">John Doe <span>Web Designer</span></Link> */}
                                </h2>
                              </td>
                              <td>{/*<Link to="/app/administrator/job-details">Web Designer</Link>*/}</td>
@@ -389,8 +397,8 @@
                              </td>
                              <td>
                                <h2 className="table-avatar">
-                                 {/*<Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_09} /></Link>
-                                 <Link to="/app/profile/employee-profile/profile">Richard Miles <span>Web Developer</span></Link>*/}
+                                 {/* <Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_02} /></Link> */}
+                                 {/* <Link to="/app/profile/employee-profile/profile">Richard Miles <span>Web Developer</span></Link> */}
                                </h2>
                              </td>
                              <td>{/*<Link to="/app/administrator/job-details">Web Developer</Link>*/}</td>
@@ -409,8 +417,8 @@
                              </td>
                              <td>
                                <h2 className="table-avatar">
-                                 {/*<Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_10} /></Link>
-                                 <Link to="/app/profile/employee-profile/profile">John Smith <span>Android Developer</span></Link>*/}
+                                 {/* <Link to="/app/profile/employee-profile/profile" className="avatar"><img src={Avatar_03} /></Link> */}
+                                 {/* <Link to="/app/profile/employee-profile/profile">John Smith <span>Android Developer</span></Link> */}
                                </h2>
                              </td>
                              <td>{/*<Link to="/app/administrator/job-details">Android Developer</Link>*/}</td>

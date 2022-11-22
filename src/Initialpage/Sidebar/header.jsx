@@ -1,11 +1,17 @@
+//update
+//img
+//link
+//path
+
 /**
  * App Header
  */
  import React,  {useState} from 'react'
-import { withRouter } from 'react-router-dom';
+// import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Avatar_05,
-  Avatar_06,Avatar_08,Avatar_09,Avatar_13,Avatar_17,Avatar_21} from '../../Entryfile/imagepath'
+import { Logo } from '../../Entryfile/imagepath';
+// import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Avatar_05,
+//   Avatar_06,Avatar_08,Avatar_09,Avatar_13,Avatar_17,Avatar_21} from '../../Entryfile/imagepath'
 
   const Header = (props) => {
 
@@ -16,18 +22,24 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
       props.onMenuClick()
     }
 
-    let pathname = location.pathname
+    // let pathname = location.pathname
     
       return (
+
+
+        
          <div className="header" style={{right:"0px"}}>
         {/* Logo */}
         <div className="header-left">
-          <Link to="/app/main/dashboard" className="logo">
-            <img src={headerlogo} width={40} height={40} alt="" />
-          </Link>
+          <a to="/app/main/dashboard" className="logo">
+            <img src={Logo} width={40} height={40} alt="" />
+          </a>
         </div>
         {/* /Logo */}
-        <a id="toggle_btn" href="#"  style={{display: pathname.includes('tasks') ?"none" :pathname.includes('compose') ? "none" :""}}onClick={handlesidebar}>
+        <a id="toggle_btn" 
+        href="#"  
+        // style={{display: pathname.includes('tasks') ?"none" :pathname.includes('compose') ? "none" :""}}onClick={handlesidebar}
+        >
           <span className="bar-icon"><span />
             <span />
             <span />
@@ -35,7 +47,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
         </a>
         {/* Header Title */}
         <div className="page-title-box">
-          <h3>Dreamguy's Technologies</h3>
+          <h3>qBotica</h3>
         </div>
         {/* /Header Title */}
         <a id="mobile_btn" className="mobile_btn" href="#" onClick={() => onMenuClik()}><i className="fa fa-bars" /></a>
@@ -57,20 +69,20 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
           {/* Flag */}
           <li className="nav-item dropdown has-arrow flag-nav">
             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
-              <img src={lnEnglish} alt="" height={20} /> <span>English</span>
+              <img src='' alt="" height={20} /> <span>English</span>
             </a>
             <div className="dropdown-menu dropdown-menu-right">
-            <a href="" className="dropdown-item">
-                    <img src={lnEnglish} alt="" height={16} /> English
+            <a href="#" className="dropdown-item">
+                    <img src='' alt="" height={16} /> English
                   </a>
                   <a href="" className="dropdown-item">
-                    <img src={lnFrench} alt="" height={16} /> French
+                    <img src="" alt="" height={16} /> French
                   </a>
                   <a href="" className="dropdown-item">
-                    <img src={lnSpanish} alt="" height={16} /> Spanish
+                    <img src='' alt="" height={16} /> Spanish
                   </a>
                   <a href="" className="dropdown-item">
-                    <img src={lnGerman} alt="" height={16} /> German
+                    <img src='' alt="" height={16} /> German
                   </a>
             </div>
           </li>
@@ -91,7 +103,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                     <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
                       <div className="media">
                         <span className="avatar">
-                          <img alt="" src={Avatar_02} />
+                          <img alt="" src="" />
                         </span>
                         <div className="media-body">
                           <p className="noti-details"><span className="noti-title">John Doe</span> added new task <span className="noti-title">Patient appointment booking</span></p>
@@ -104,7 +116,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                     <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
                       <div className="media">
                         <span className="avatar">
-                          <img alt="" src={Avatar_03} />
+                          <img alt="" src="" />
                         </span>
                         <div className="media-body">
                           <p className="noti-details"><span className="noti-title">Tarah Shropshire</span> changed the task name <span className="noti-title">Appointment booking with payment gateway</span></p>
@@ -117,7 +129,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                     <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
                       <div className="media">
                         <span className="avatar">
-                          <img alt="" src={Avatar_06} />
+                          <img alt="" src="" />
                         </span>
                         <div className="media-body">
                           <p className="noti-details"><span className="noti-title">Misty Tison</span> added <span className="noti-title">Domenic Houston</span> and <span className="noti-title">Claire Mapes</span> to project <span className="noti-title">Doctor available module</span></p>
@@ -130,7 +142,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                     <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
                       <div className="media">
                         <span className="avatar">
-                          <img alt="" src={Avatar_17} />
+                          <img alt="" src="" />
                         </span>
                         <div className="media-body">
                           <p className="noti-details"><span className="noti-title">Rolland Webber</span> completed task <span className="noti-title">Patient and Doctor video conferencing</span></p>
@@ -143,7 +155,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                     <Link onClick={()=>localStorage.setItem("minheight","true")} to="/app/administrator/activities">
                       <div className="media">
                         <span className="avatar">
-                          <img alt="" src={Avatar_13} />
+                          <img alt="" src="" />
                         </span>
                         <div className="media-body">
                           <p className="noti-details"><span className="noti-title">Bernardo Galaviz</span> added new task <span className="noti-title">Private chat module</span></p>
@@ -177,7 +189,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
-                            <img alt="" src={Avatar_09} />
+                            <img alt="" src="" />
                           </span>
                         </div>
                         <div className="list-body">
@@ -194,7 +206,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
-                            <img alt="" src={Avatar_02} />
+                            <img alt="" src="" />
                           </span>
                         </div>
                         <div className="list-body">
@@ -211,7 +223,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
-                            <img alt="" src={Avatar_03} />
+                            <img alt="" src="" />
                           </span>
                         </div>
                         <div className="list-body">
@@ -228,7 +240,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
-                            <img alt="" src={Avatar_05} />
+                            <img alt="" src="" />
                           </span>
                         </div>
                         <div className="list-body">
@@ -245,7 +257,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">
-                            <img alt="" src={Avatar_08} />
+                            <img alt="" src="" />
                           </span>
                         </div>
                         <div className="list-body">
@@ -267,7 +279,7 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
           {/* /Message Notifications */}
           <li className="nav-item dropdown has-arrow main-drop">
             <a href="#" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-              <span className="user-img me-1"><img src={Avatar_21} alt="" />
+              <span className="user-img me-1"><img src="" alt="" />
                 <span className="status online" /></span>
               <span>Admin</span>
             </a>
@@ -295,4 +307,5 @@ import {headerlogo,lnEnglish,lnFrench,lnSpanish,lnGerman, Avatar_02,Avatar_03,Av
    }
 
 
-export default withRouter(Header);
+export default Header;   
+// export default withRouter(Header);

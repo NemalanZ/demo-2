@@ -1,5 +1,7 @@
 export { default as Logo } from '../Asset/img/Logo.jpg'
 
+export { default as Hero_logo } from '../img/Hero-logo.jpg'
+
 export {default as Avatar_01} from 'Asset/css/img/profiles/avatar-01.jpg';
 
 export {default as Avatar_02} from 'Asset/css/img/profiles/avatar-02.jpg';

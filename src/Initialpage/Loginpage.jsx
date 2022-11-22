@@ -2,6 +2,7 @@
 import {Helmet} from 'react-helmet'
 import { Logo } from '../Entryfile/imagepath'
 import '../Asset/css/css/style.css'
+import { Link } from 'react-router-dom';
 
 
 function Loginpage() {
@@ -11,6 +12,7 @@ function Loginpage() {
         <title>Login - qBotica</title>
         <meta name="description" content="Login page"/>	
       </Helmet>
+      <div className="account-content">
       <div className='container'>
          {/* Account Logo */}
         <div className='account-logo'>
@@ -45,16 +47,15 @@ function Loginpage() {
                 </div> {/*form-group*/}
                 <div className="form-group text-center">
                   <button
+                    
                     className="btn btn-primary account-btn"
                     type="submit">
-                  Login
+                      <Link to="jobsdashboard">Login</Link>
+                  
                   </button>
                    
                 </div>
                 </form>
-
-
-
 
                 </div> 
 
@@ -63,7 +64,7 @@ function Loginpage() {
       </div> {/*container */}   
 
           
-      
+    </div>
     </>
   )
 };

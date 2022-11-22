@@ -7,7 +7,7 @@ import { Link, Route, withRouter } from 'react-router-dom';
 // router service
 import routerService from "../../router_service";
 
-import Header from './header.jsx';
+import Header from './header';
 import SidebarContent from './sidebar';
 
 const DefaultLayout = (props) => {
